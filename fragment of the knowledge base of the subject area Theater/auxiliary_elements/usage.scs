@@ -1,0 +1,4 @@
+sc_node_norole_relation -> nrel_usage;;
+	nrel_usage => nrel_main_idtf: 
+ 	[использование*] (*<-lang_ru;;*);
+	[usage*] (*<-lang_en;;*);;

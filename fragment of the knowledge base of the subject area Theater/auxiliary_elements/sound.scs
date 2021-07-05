@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_sound;;
+	concept_sound => nrel_main_idtf: 
+ 	[звук] (*<-lang_ru;;*);
+	[sound] (*<-lang_en;;*);;

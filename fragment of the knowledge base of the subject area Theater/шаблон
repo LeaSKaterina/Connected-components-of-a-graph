@@ -1,0 +1,66 @@
+//объявление
+*описываемое понятие*
+<- sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+ 	[] (*<-lang_ru;;*);
+	[] (*<-lang_en;;*);
+
+//определение
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+    => nrel_main_idtf:
+      [Опр. ()] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+      //используемые константы  	
+};;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+   *);
+
+//утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(*понятие*, *используемые константы*)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+		concept_sound_panel;
+		nrel_usage
+};; 
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+      [.](*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Барокко)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/baroque.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+//деление на подмножества
+<= nrel_subdividing: ... 
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+	[*как называется деление на подмножества, т.е. по какому признаку делится*](* <-lang_ru;; *);
+    [*тоже самое на английском*](* <-lang_en;; *);;
+->*элемент подмножества 1*;*элемент подмножества 2*;*элемент подмножества 3*;; 
+*);;
+
+//какое это отношение (если отношение)
+oriented_relation      -> ;;
+binary_relation        -|> ;;
+asymmetric_relation    -|> ;;
+antireflexive_relation -|> ;;
+

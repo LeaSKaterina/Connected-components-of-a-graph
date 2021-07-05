@@ -1,0 +1,50 @@
+//Реквизит
+concept_props
+<- sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+ 	[реквизит] (*<-lang_ru;;*);
+	[props] (*<-lang_en;;*);
+
+//определение
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+    => nrel_main_idtf:
+      [Опр. (реквизит)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+        concept_combination; 	
+        concept_thing;
+        nrel_necessity
+};;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Реквизит -  совокупность предметов, необходимых для представления.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+   *);
+
+//утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(реквизит, подлинная вещь)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+		concept_authentic_item
+};; 
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+      [Реквизит корректно употреблять только по отношению к подлинным вещам.](*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+//иллюстрация
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Реквизит)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/props.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

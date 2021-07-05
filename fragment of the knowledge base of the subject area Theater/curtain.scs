@@ -1,0 +1,50 @@
+//Занавес
+concept_curtain
+<- sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+ 	[занавес] (*<-lang_ru;;*);
+	[curtain] (*<-lang_en;;*);
+
+//определение
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+    => nrel_main_idtf:
+      [Опр. (занавес)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+      concept_stage;
+      concept_audience_hall	
+};;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Занавес - полотнище, закрывающее сцену от зрительного зала.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+   *);
+
+//утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(занавес, *используемые константы*)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+		theater;
+        concept_emblem
+};; 
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+      [Занавес может быть украшен вышитой или нарисованной эмблемой театра.](*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Занавес)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/curtain.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

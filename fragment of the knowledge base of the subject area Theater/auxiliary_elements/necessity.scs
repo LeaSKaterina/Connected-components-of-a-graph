@@ -1,0 +1,4 @@
+sc_node_norole_relation -> nrel_necessity;;
+	nrel_necessity => nrel_main_idtf: 
+ 	[необходимость*] (*<-lang_ru;;*);
+	[necessity*] (*<-lang_en;;*);;

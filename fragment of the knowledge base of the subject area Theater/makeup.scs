@@ -1,0 +1,55 @@
+//объявление
+concept_makeup
+<- sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+ 	[грим] (*<-lang_ru;;*);
+	[makeup] (*<-lang_en;;*);
+
+//определение
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+    => nrel_main_idtf:
+      [Опр. (грим)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+      actor_theater;
+      concept_stage;
+      concept_face
+};;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Грим - необходимое для игры на сцене оформление лица актера.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+   *);
+
+//утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(грим, режиссёр, спектакль, актер)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+      actor_theater;
+      producer;
+      spectacle 
+};; 
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+      [Характер грима в театре зависит от художественных особенностей пьесы, замысла актёра, режиссёрской концепции и стиля оформления спектакля.](*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+//иллюстрация
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Грим)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/makeup.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+

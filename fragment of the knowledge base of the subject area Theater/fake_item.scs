@@ -1,0 +1,52 @@
+//Бутафория
+concept_fake_item
+<- sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+  	[бутафорский предмет] (*<-lang_ru;;*);
+	[бутафория] (*<-lang_ru;;*);
+	[fake item] (*<-lang_en;;*);
+
+//определение
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+    => nrel_main_idtf:
+      [Опр. (Бутафория)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+		rrel_spectacle;
+		concept_authentic_item;
+		nrel_usage
+		};;
+	<= nrel_sc_text_translation: ... (*
+    	-> rrel_example:
+        [Бутафория - поддельные, специально изготавливаемые предметы, используемые в театральных спектаклях взамен настоящих вещей.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+//утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(бутафорский предмет, дешевизна, непрочность)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+		nrel_cheapness;
+		nrel_fragility
+};; 
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	  [Бутафорские предметы отличаются дешевизной и непрочностью.](*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+//иллюстрация
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Бутафория)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/fake_item.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

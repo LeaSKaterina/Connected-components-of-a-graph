@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_clothes;;
+	concept_clothes => nrel_main_idtf: 
+ 	[одежда] (*<-lang_ru;;*);
+	[clothes] (*<-lang_en;;*);;

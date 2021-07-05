@@ -1,0 +1,59 @@
+//Суфлер
+rrel_prompter
+<- sc_node_role_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+ 	[суфлер'] (*<-lang_ru;;*);
+	[prompter'] (*<-lang_en;;*);
+
+//определение
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+    => nrel_main_idtf:
+      [Опр. (суфлер)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+        actor_theater; 
+        concept_text_of_the_role;
+        nrel_clue        	
+};;
+<= nrel_sc_text_translation: ... (*
+    -> rrel_example:
+        [Суфлер - тот, кто подсказывает актёрам текст роли.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+        *);;
+*);
+
+//утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(суфлер', шептать*, подсказка*)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+      nrel_whisper;
+      nrel_clue 
+      };; 
+    <= nrel_sc_text_translation: ... (*
+        -> rrel_example:
+        [Суфлер даёт подсказки шёпотом.](*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+//иллюстрация
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Суфлер)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/prompter.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+
+//какое это отношение (если отношение)
+oriented_relation      -> rrel_prompter;;
+binary_relation        -|> rrel_prompter;;
+asymmetric_relation    -|> rrel_prompter;;
+antireflexive_relation -|> rrel_prompter;;
+

@@ -1,0 +1,36 @@
+//Гадрероб
+concept_wardrobe
+<- sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+ 	[гардероб] (*<-lang_ru;;*);
+	[wardrobe] (*<-lang_en;;*);
+
+//определение
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+    => nrel_main_idtf:
+      [Опр. (гадрероб)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+      concept_room;
+      concept_clothes;
+      concept_theater_audience	
+};;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Гардероб - помещение для хранения верхней одежды посетителей театра.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+   *);
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Гардероб)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/wardrobe.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

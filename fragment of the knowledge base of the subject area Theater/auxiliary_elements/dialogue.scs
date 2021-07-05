@@ -1,0 +1,4 @@
+sc_node_not_relation ->  concept_dialogue;;
+    concept_dialogue => nrel_main_idtf: 
+ 	[диалог] (*<-lang_ru;;*);
+	[dialogue] (*<-lang_en;;*);;

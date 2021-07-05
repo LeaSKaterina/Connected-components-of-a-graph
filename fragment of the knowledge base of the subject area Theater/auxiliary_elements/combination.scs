@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_combination;;
+    concept_combination => nrel_main_idtf: 
+ 	[совокупность] (*<-lang_ru;;*);
+	[combination] (*<-lang_en;;*);;

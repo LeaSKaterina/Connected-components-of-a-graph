@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_authentic_item;;
+	concept_authentic_item => nrel_main_idtf: 
+ 	[подлинная вещь] (*<-lang_ru;;*);
+	[authentic item] (*<-lang_en;;*);;

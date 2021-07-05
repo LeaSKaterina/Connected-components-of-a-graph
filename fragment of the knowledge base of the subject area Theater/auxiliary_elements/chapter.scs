@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_chapter;;
+	concept_chapter => nrel_main_idtf: 
+ 	[глава] (*<-lang_ru;;*);
+	[chapter] (*<-lang_en;;*);;

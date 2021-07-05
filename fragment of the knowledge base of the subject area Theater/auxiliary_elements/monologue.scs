@@ -1,0 +1,4 @@
+sc_node_not_relation ->  concept_monologue;;
+    concept_monologue => nrel_main_idtf: 
+ 	[монолог] (*<-lang_ru;;*);
+	[monologue] (*<-lang_en;;*);;

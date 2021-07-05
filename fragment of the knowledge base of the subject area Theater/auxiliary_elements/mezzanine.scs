@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_mezzanine;;
+	concept_mezzanine => nrel_main_idtf: 
+ 	[бельэтаж] (*<-lang_ru;;*);
+	[mezzanine] (*<-lang_en;;*);;

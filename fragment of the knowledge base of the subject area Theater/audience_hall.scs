@@ -1,0 +1,60 @@
+//Зрительский зал
+concept_audience_hall
+<- sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+ 	[зрительный зал] (*<-lang_ru;;*);
+	[audience hall] (*<-lang_en;;*);
+
+//определение
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+    => nrel_main_idtf:
+      [Опр. (зрительный зал)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+      nrel_whole_part;
+      concept_room;
+      theater;
+      concept_theater_audience  	
+};;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Зрительный зал - часть помещения в театре, предназдначенное для публики.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+   *);
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Зрительный зал)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/audience_hall.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Части зрительного зала)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/audience_hall_parts.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+
+//деление на подмножества
+<= nrel_subdividing: ... 
+(*
+	<- explanation;;
+	=> nrel_main_idtf:
+	[Часть](* <-lang_ru;; *);
+    [Part](* <-lang_en;; *);;
+->concept_stall;concept_amphitheatre;concept_baignoire; concept_mezzanine; concept_balcony;;
+*);;

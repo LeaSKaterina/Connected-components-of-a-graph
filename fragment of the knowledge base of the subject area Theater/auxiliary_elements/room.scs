@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_room;;
+	concept_room => nrel_main_idtf: 
+ 	[помещение] (*<-lang_ru;;*);
+	[room] (*<-lang_en;;*);;

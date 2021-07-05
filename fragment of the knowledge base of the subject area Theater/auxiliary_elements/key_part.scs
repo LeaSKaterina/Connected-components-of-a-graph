@@ -1,0 +1,6 @@
+sc_node_norole_relation -> nrel_key_part;;
+	nrel_key_part => nrel_main_idtf: 
+ 	[ключевая часть*] (*<-lang_ru;;*);
+	[key part*] (*<-lang_en;;*);;
+
+nrel_whole_part -> nrel_key_part;;

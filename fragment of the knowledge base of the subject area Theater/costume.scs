@@ -1,0 +1,53 @@
+//Костюм
+concept_costume
+<- sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+ 	[костюм] (*<-lang_ru;;*);
+	[costume] (*<-lang_en;;*);
+
+//определение
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+    => nrel_main_idtf:
+      [Опр. (костюм)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+      concept_clothes;
+      nrel_character;
+      rrel_spectacle
+};;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Костюм - одежда персонажа, элемент оформления спектакля.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+   *);
+
+//утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(костюм, актёр, персонаж*)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+      actor_theater;
+      nrel_character
+};; 
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+      [Костюм помогает актёру создать образ персонажа.](*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);
+
+//иллюстрация
+<-rrel_key_sc_element:...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Костюм)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/costume.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;
+
+concept_clothes -> concept_costume;;

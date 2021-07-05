@@ -1,0 +1,50 @@
+//ансамбль
+concept_ensemble
+<- sc_node_not_relation;
+
+//идентификаторы
+=> nrel_main_idtf: 
+ 	[ансамбль] (*<-lang_ru;;*);
+	[ensemble] (*<-lang_en;;*);
+
+//определение
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+    => nrel_main_idtf:
+      [Опр. (ансамбль)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+        nrel_performer;
+        concept_combination
+    };;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Ансамбль - совокупность исполнителей.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+   *);
+
+//утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+    [Утв.(ансамбль, музыкальный коллектив, синонимия*)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+      concept_musical_collective;
+      nrel_synonymy 
+};; 
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+      [Ансамбль также называют музыкальным коллективом.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+*);
+
+//иллюстрация
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ансамбль)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: "file://images/ensemble.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);;

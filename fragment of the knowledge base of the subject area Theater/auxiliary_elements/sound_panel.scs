@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_sound_panel;;
+	concept_sound_panel => nrel_main_idtf: 
+ 	[звуковой пульт] (*<-lang_ru;;*);
+	[sound panel] (*<-lang_en;;*);;

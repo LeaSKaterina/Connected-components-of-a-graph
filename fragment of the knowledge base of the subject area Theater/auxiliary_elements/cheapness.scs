@@ -1,0 +1,4 @@
+sc_node_norole_relation -> nrel_cheapness;;
+    nrel_cheapness => nrel_main_idtf: 
+ 	[дешевизна*] (*<-lang_ru;;*); 
+	[cheapness*] (*<-lang_en;;*);;

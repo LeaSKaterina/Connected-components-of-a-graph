@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_baignoire;;
+	concept_baignoire => nrel_main_idtf: 
+ 	[бенуар] (*<-lang_ru;;*);
+	[baignoire] (*<-lang_en;;*);;

@@ -1,0 +1,46 @@
+//Реплика*
+nrel_replica
+<- sc_node_norole_relation;
+
+
+//идентификаторы
+=> nrel_main_idtf: 
+ 	[реплика] (*<-lang_ru;;*);
+	[replica] (*<-lang_en;;*);
+
+//определение   
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+    => nrel_main_idtf:
+      [Опр. (реплика)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+        concept_text_of_the_role;
+        actor_theater
+};;
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Реплика - последняя фраза сценического персонажа, за которой следует текст роли другого действующего лица.] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+   *);
+
+//утверждение
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(реплика, обмен*, диалог)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+        concept_dialogue;
+        nrel_exchange
+};; 
+<= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+      [Обмен репликами является диалогом.](*<-lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+*);;
+
+//какое это отношение 
+oriented_relation      -> nrel_replica;;
+binary_relation        -|> nrel_replica;;
+asymmetric_relation    -|> nrel_replica;;
+antireflexive_relation -|> nrel_replica;;
+

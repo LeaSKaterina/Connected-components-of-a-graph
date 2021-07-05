@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_amphitheatre;;
+	concept_amphitheatre => nrel_main_idtf: 
+ 	[амфитеатр] (*<-lang_ru;;*);
+	[samphitheatre] (*<-lang_en;;*);;

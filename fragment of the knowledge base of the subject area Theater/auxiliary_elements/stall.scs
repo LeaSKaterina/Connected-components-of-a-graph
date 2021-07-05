@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_stall;;
+	concept_stall => nrel_main_idtf: 
+ 	[партер] (*<-lang_ru;;*);
+	[stall] (*<-lang_en;;*);;

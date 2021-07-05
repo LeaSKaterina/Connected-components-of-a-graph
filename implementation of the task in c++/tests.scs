@@ -1,0 +1,67 @@
+directed_graph->myGraph1(*
+	->rrel_vertex: A1;;
+	->rrel_vertex: B1;;
+	->rrel_vertex: C1;;
+	->rrel_edge: (A1 <=> B1);;
+	->rrel_edge: (B1 <=> C1);;
+*);;
+directed_graph->myGraph2(*
+	->rrel_vertex: A2;;
+	->rrel_vertex: B2;;
+	->rrel_vertex: C2;;
+	->rrel_vertex: D2;;
+	->rrel_edge: (A2 <=> B2);;
+	->rrel_edge: (C2 <=> D2);;
+*);;
+directed_graph->myGraph3(*
+	->rrel_vertex: A3;;
+	->rrel_vertex: B3;;
+	->rrel_vertex: C3;;
+	->rrel_vertex: D3;;
+	->rrel_vertex: E3;;
+	->rrel_vertex: F3;;
+	->rrel_edge: (A3 <=> B3);;
+	->rrel_edge: (A3 <=> C3);;
+	->rrel_edge: (A3 <=> D3);;
+	->rrel_edge: (E3 <=> F3);;
+*);;
+directed_graph->myGraph4(*
+	->rrel_vertex: A4;;
+	->rrel_vertex: B4;;
+	->rrel_vertex: C4;;
+	->rrel_vertex: D4;;
+	->rrel_vertex: E4;;
+	->rrel_vertex: F4;;
+	->rrel_vertex: G4;;
+	->rrel_edge: (A4 <=> B4);;
+	->rrel_edge: (B4 <=> C4);;
+	->rrel_edge: (C4 <=> D4);;
+	->rrel_edge: (A4 <=> D4);;
+	->rrel_edge: (E4 <=> F4);;
+*);;
+directed_graph->myGraph5(*
+	->rrel_vertex: A5;;
+	->rrel_vertex: B5;;
+	->rrel_vertex: C5;;
+	->rrel_vertex: D5;;
+	->rrel_vertex: E5;;
+	->rrel_vertex: F5;;
+	->rrel_vertex: G5;;
+	->rrel_vertex: H5;;
+	->rrel_vertex: I5;;
+	->rrel_vertex: J5;;
+	->rrel_vertex: K5;;
+	->rrel_vertex: L5;;	
+	->rrel_edge: (A5 <=> B5);;
+	->rrel_edge: (B5 <=> C5);;
+	->rrel_edge: (A5 <=> C5);;
+	->rrel_edge: (D5 <=> E5);;
+	->rrel_edge: (E5 <=> F5);;
+	->rrel_edge: (D5 <=> F5);;
+	->rrel_edge: (G5 <=> H5);;
+	->rrel_edge: (H5 <=> I5);;
+	->rrel_edge: (G5 <=> I5);;
+	->rrel_edge: (K5 <=> L5);;
+	->rrel_edge: (L5 <=> J5);;
+	->rrel_edge: (K5 <=> J5);;
+*);;

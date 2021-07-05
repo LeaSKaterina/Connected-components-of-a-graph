@@ -1,0 +1,29 @@
+graph -> G5;;
+G4 -> rrel_arcs: ..arcs;;
+G4 -> rrel_nodes: ..nodes;;
+
+..nodes ->  A5;;
+..nodes ->  B5;;
+..nodes ->  C5;;
+..nodes ->  D5;;
+..nodes ->  E5;;
+..nodes ->  F5;;
+..nodes ->  R5;;
+..nodes ->  H5;;
+..nodes ->  I5;;
+..nodes ->  J5;;
+..nodes ->  K5;;
+..nodes ->  L5;;
+
+..arcs -> (A5 <=> B5);;
+..arcs -> (B5 <=> C5);;
+..arcs -> (A5 <=> C5);;
+..arcs -> (D5 <=> E5);;
+..arcs -> (E5 <=> F5);;
+..arcs -> (D5 <=> F5);;
+..arcs -> (R5 <=> H5);;
+..arcs -> (H5 <=> I5);;
+..arcs -> (R5 <=> I5);;
+..arcs -> (K5 <=> L5);;
+..arcs -> (L5 <=> J5);;
+..arcs -> (K5 <=> J5);;

@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_balcony;;
+	concept_balcony => nrel_main_idtf: 
+ 	[балкон] (*<-lang_ru;;*);
+	[balcony] (*<-lang_en;;*);;

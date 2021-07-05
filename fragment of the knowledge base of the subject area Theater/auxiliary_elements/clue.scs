@@ -1,0 +1,4 @@
+sc_node_norole_relation -> nrel_clue;;
+    nrel_clue => nrel_main_idtf: 
+ 	[подсказка*] (*<-lang_ru;;*); 
+	[clue*] (*<-lang_en;;*);;

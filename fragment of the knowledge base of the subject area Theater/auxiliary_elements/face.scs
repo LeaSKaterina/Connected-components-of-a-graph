@@ -1,0 +1,4 @@
+sc_node_not_relation ->  concept_face;;
+    concept_face => nrel_main_idtf: 
+ 	[лицо] (*<-lang_ru;;*);
+	[face] (*<-lang_en;;*);;

@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_musical_collective;;
+    concept_musical_collective => nrel_main_idtf: 
+ 	[музыкальный коллектив] (*<-lang_ru;;*);
+	[musical collective] (*<-lang_en;;*);;

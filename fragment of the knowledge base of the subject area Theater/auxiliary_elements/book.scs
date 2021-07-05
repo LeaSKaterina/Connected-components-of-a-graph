@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_book;;
+	concept_book => nrel_main_idtf: 
+ 	[книга] (*<-lang_ru;;*);
+	[book] (*<-lang_en;;*);;

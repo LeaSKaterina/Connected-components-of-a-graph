@@ -1,0 +1,4 @@
+sc_node_not_relation -> concept_emblem;;
+	concept_emblem => nrel_main_idtf: 
+ 	[эмблема] (*<-lang_ru;;*);
+	[emblem] (*<-lang_en;;*);;
